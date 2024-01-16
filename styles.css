@@ -21,14 +21,22 @@ h1 {
 main {
     width: 60%;
     margin: 0 auto;
-    
     }
+
 
 form, select {
     display: flex;
     flex-direction: column;
 }
 
+#portfolio_pic {
+    
+    display: flex;
+    margin: auto;
+}
 
-
-
+h3 {
+    display: flex;
+    border: 1px solid black;
+    margin: 10px;
+}
