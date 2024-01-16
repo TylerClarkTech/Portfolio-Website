@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>D&D Survey</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <main>
+      <header></header> 
+      <h1 id="title">D&D Character Build Survey</h1>
+      <p id="description">
+      Please let us know a little about yourself and your playstyle
+      </p>
+
+      <!--survey form with text inputs, radio buttons, a dropdown, and a checkbox-->
+      <form id="survey-form">
+       
+       <!--name input-->
+       <label for="name">Name</label>
+        <input 
+          id="name" 
+          type="text" 
+          required 
+          placeholder="Enter your name" 
+        />
+
+        <!--Email input-->
+        <label for="email">Email</label>
+        <input
+          id="email"
+          type="email"
+          required
+          placeholder="Enter your email"
+        />
+
+        <!--Character level input-->
+        <label for="number">Character Level</label>
+        <input
+          id="number"
+          type="number"
+          min="1"
+          max="20"
+          pattern="[0-9]"
+          placeholder="Level"
+          required
+        />
+
+        <!--Dropdown menu to select which of the 8 playstyles you enjoy most-->
+        <label for="dropdown">What type of player are you?</label>
+        <select id="dropdown" required>
+          <option value="">Select your playstyle</option>
+          <option value="Actor">Actor</option>
+          <option value="Explorer">Explorer</option>
+          <option value="Instigator">Instigator</option>
+          <option value="Min/Maxer">Min/Maxer</option>
+          <option value="Slayer">Slayer</option>
+          <option value="Storyteller">Storyteller</option>
+          <option value="Thinker">Thinker</option>
+          <option value="Watcher">Watcher</option>
+        </select>
+
+
+        <!--Radio button selector to decide if you care more about money or characters-->
+        <p>Do you care more about loot or NPCs?</p>
+        <label for="radio1">Loot</label>
+        <input type="radio" name="radiobutton" id="radio1" />
+        <label for="radio2">NPCs</label>
+        <input type="radio" name="radiobutton" id="radio2" />
+
+
+        <!--12 checkboxes representing the 12 classes in D&D-->
+        <input type="checkbox" value="Fighter" id="fighter" />
+        <label for="fighter">Fighter</label>
+        <input type="checkbox" value="Monk" id="monk" />
+        <label for="monk">Monk</label>
+        <input type="checkbox" value="Paladin" id="paladin" />
+        <label for="paladin">Paladin</label>
+        <input type="checkbox" value="Ranger" id="ranger" />
+        <label for="ranger">Ranger</label>
+        <input type="checkbox" value="Barbarian" id="barbarian" />
+        <label for="barbarian">Barbarian</label>
+        <input type="checkbox" value="Cleric" id="cleric" />
+        <label for="cleric">Cleric</label>
+        <input type="checkbox" value="Druid" id="druid" />
+        <label for="druid">Druid</label>
+        <input type="checkbox" value="Rogue" id="rogue" />
+        <label for="rogue">Rogue</label>
+        <input type="checkbox" value="Sorcerer" id="sorcerer" />
+        <label for="sorcerer">Sorcerer</label>
+        <input type="checkbox" value="Bard" id="bard" />
+        <label for="bard">Bard</label>
+        <input type="checkbox" value="Wizard" id="wizard" />
+        <label for="wizard">Wizard</label>
+        <input type="checkbox" value="Warlock" id="warlock" />
+        <label for="warlock">Warlock</label>
+
+        <!--text area to add any final comments-->
+        <!--<textarea
+          rows="10"
+          cols="10"
+          placeholder="Any final"
+        ></textarea>
+        -->
+
+        <!--submit button-->
+        <!--<input type="submit" id="submit" />-->
+      </form>
+    </main>
+  </body>
+</html>
